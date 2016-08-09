@@ -1,0 +1,8 @@
+# Ignore list of project files
+
+*~
+*.json
+/php.inc/config/email.php
+/php.inc/libraries/email.class.php
+/images/portfolio
+/images/20160609M6ssYe1l7UaTka9z_Xq8bf_large.jpeg
