@@ -11,7 +11,6 @@
      */
     define(DEBUG, FALSE);
 
-
     define(BASEPATH, __DIR__ . '/');
     define(COREPATH, BASEPATH . 'php.inc/');
 
@@ -29,6 +28,5 @@
      * Loading router card
      */
     require_once COREPATH . 'config/routes.php';
-
 
     $controller = new \Core\Main();

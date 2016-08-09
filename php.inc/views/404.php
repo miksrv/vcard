@@ -1,72 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="content-script-type" content="text/javascript" />
-		<meta http-equiv="content-style-type" content="text/css" />
-		<meta http-equiv="content-language" content="nl" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<meta name="description" content="" />
-		<meta name="author" content="" />
-	
-		<title>Pascal van Gemert - Interactive Resume</title>
-		
-		<!-- Bootstrap DIR_CORE CSS -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
-		<link href="<?= VIEW_PATH; ?>css/bootstrap.min.css" rel="stylesheet" />
-		<link href="<?= VIEW_PATH; ?>css/jquery.iedialog.min.css" rel="stylesheet" />
-		<link href="<?= VIEW_PATH; ?>style.css" rel="stylesheet" />
-		
-	</head>
-	<body>	
-	
-		<div class="jumbotron" data-src="<?= VIEW_PATH; ?>images/kitten_animation.gif" data-position="center right">
-			<div class="container">
-				<h1>404 - Page not found</h1>
-				<p class="lead">We only found a sleeping kitten. <a href="<?= BASE; ?>">Return to the homepage</a></p>
-			</div>
-			
-			<div class="overlay"></div>
-		</div>
-		
-		<!-- Bootstrap DIR_CORE JavaScript -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="<?= VIEW_PATH; ?>js/jquery.iedialog.min.js"></script>
-		<script type="text/javascript">
-			
-			$('body').ieDialog({
-				closable: false
-			});  
-			
-			$(document).ready(function()
-			{	
-				$('.jumbotron').css({ height: ($(window).height()) +'px' });
-				
-				lazyLoad($('.jumbotron'));
-			});
-
-			$(window).on('resize', function() 
-			{  
-				$('.jumbotron').css({ height: ($(window).height()) +'px' });
-			});  	
-
-			function lazyLoad(poContainer)
-			{
-				var lstrSource   = poContainer.attr('data-src');
-				var lstrPosition = poContainer.attr('data-position');
-
-				$('<img>').attr('src', lstrSource).load(function()
-				{
-					poContainer.css('background-image', 'url("'+ lstrSource +'")');
-					poContainer.css('background-position', lstrPosition);
-					poContainer.css('-ms-filter', '"progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'' + lstrSource + '\', sizingMethod=\'scale\')"');
-					poContainer.css('filter', 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'' + lstrSource + '\', sizingMethod=\'scale\'');
-				});
-			}
-		</script>
-		<script type="text/javascript" src="<?= VIEW_PATH; ?>js/bootstrap.min.js"></script>
-	</body>
+<html lang="ru">
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/css/404/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="/js/404.js"></script>
+        <title>404 NOT FOUND</title>
+    </head>
+    <body class="loading">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
+                <header id="header">
+                    <h1>Page Not Found</h1>
+                    <p>The page you tried to access does not exist on this server</p>
+                    <nav>
+                        <ul>
+                            <li><a href="/#skills" title="Professional skills" class="fa fa-gears"><span>Skills</span></a></li>
+                            <li><a href="/#interests" title="Interests" class="fa fa-flask"><span>Interests</span></a></li>
+                            <li><a href="/portfolio" class="fa fa-briefcase"><span>Portfolio</span></a></li>
+                            <li><a href="https://github.com/miksrv/vcard" title="Github" class="fa fa-github"><span>Github</span></a></li>
+                            <li><a href="/#contacts" title="Contacts" class="fa fa-envelope-o"><span>Email</span></a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <footer id="footer">
+                    <span class="copyright">&copy; Mik &nbsp;&bull;&nbsp; <a href="http://miksrv.ru/" title="" target="_blank">miksrv.ru</a> by <a href="#" title="">HTML5 UP</a>.</span>
+                </footer>
+            </div>
+        </div>
+    </body>
 </html>

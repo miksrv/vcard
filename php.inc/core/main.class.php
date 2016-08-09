@@ -60,7 +60,7 @@ class Main {
     function initialization() {
         $url   = Router::instance()->get_uri();
         $route = Router::instance()->load($url);
-        
+
         $this->_hook_email();
         $this->_choose_language();
         $this->_load_data();
@@ -89,7 +89,7 @@ class Main {
 
         call_user_func_array(array($controller, $route->method), array());
 
-        $this->view->showTemplate($route->template);
+        $this->view->display($route->template);
     } // function navigate($route)
 
 
