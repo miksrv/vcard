@@ -103,6 +103,7 @@ class Router {
      */
     static function redirect($url, $code = 303) {
         header('Location: ' . $url, TRUE, $code);
+        exit();
     } // static function redirect($url)
 
 
