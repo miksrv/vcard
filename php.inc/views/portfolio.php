@@ -8,6 +8,14 @@
         <link rel="stylesheet" type="text/css" href="/css/imagelightbox.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="//miksrv.ru/images/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//miksrv.ru/images/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//miksrv.ru/images/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="//miksrv.ru/images/icons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//miksrv.ru/images/icons/apple-touch-icon-180x180.png">
+        <link rel="icon" sizes="192x192" href="//miksrv.ru/images/icons/touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="msapplication-config" content="//miksrv.ru/images/icons/ieconfig.xml">
         <title><?= $language->title; ?></title>
     </head>
     <body>
