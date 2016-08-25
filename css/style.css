@@ -120,12 +120,6 @@ nav li.current a, nav li.active a {
     color: #fff !important;
     opacity: inherit;
 }
-nav ul li a {
-  padding: 0px 10px;
-  margin: 0px;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
 nav ul li a:hover {
   color: #fff;
   opacity: inherit;
