@@ -2,7 +2,7 @@
 /**
  * S A M P L E    P H P    C O D E
  * 
- * @author     Mikhail (Mikâ˘) <miksoft.tm@gmail.com>
+ * @author     Mikhail (Mik™) <miksoft.tm@gmail.com>
  * @copyright  Copyright (c) 2016, Mikhail
  */
 
@@ -14,7 +14,7 @@
  * @package PHPSample
  * @subpackage Core
  * @category View
- * @author Mikhail (Mikâ˘) <miksoft.tm@gmail.com>
+ * @author Mikhail (Mik™) <miksoft.tm@gmail.com>
  * @version 1.0.0 (7.06.2016)
  */  
 class View {

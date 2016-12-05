@@ -9,7 +9,9 @@
 
                         <div class="row">
                             <div class="col-xs-12 col-md-5 c <?= ($index % 2 == 0) ? 'left' : 'right'; ?>">
-                                <img src="/images/interests/<?= $interest->image; ?>" alt="<?= $interest->title; ?>" />
+                                <div class="interests-image">
+                                    <img src="/images/interests/<?= $interest->image; ?>" alt="<?= $interest->title; ?>" />
+                                </div>
                             </div>
                             <div class="col-xs-12 col-md-7">
                                 <h3><?= $interest->title; ?></h3>

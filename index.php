@@ -1,9 +1,10 @@
 <?php
 /**
- * S A M P L E    P H P    C O D E
+ * A U T O M A T E D    W E A T H E R    S T A T I O N
  * 
  * @author     Mikhail (Mik™) <miksoft.tm@gmail.com>
  * @copyright  Copyright (c) 2016, Mikhail
+ * @link       http://miksrv.ru
  */
 
     /**
@@ -23,7 +24,7 @@
     $LOADER = new \Core\Loader();
 
     spl_autoload_register(array($LOADER, 'autoload'));
-    
+
     /**
      * Loading router card
      */

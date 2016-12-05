@@ -60,8 +60,8 @@ a {
 
 header {
     background-color: #4caf50;
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -120,6 +120,12 @@ nav li.current a, nav li.active a {
     color: #fff !important;
     opacity: inherit;
 }
+nav ul li a {
+  padding: 0px 10px;
+  margin: 0px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
 nav ul li a:hover {
   color: #fff;
   opacity: inherit;
@@ -128,16 +134,50 @@ nav ul li a:hover {
 }
 nav ul li.lang {
     float: right;
-    float: right;
-    line-height: 40px;
-    margin-top: 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 nav ul li.lang:last-of-type {
     border-left: none;
 }
 nav ul li.lang:before {
     content: none;
+}
+nav .mobile-menu {
+    display: none;
+}
+nav .mobile-menu a {
+    font-size: 28px;
+}
+
+@media (max-width: 580px) {
+    header nav {
+        position: relative;
+    }
+    nav ul.language-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav ul li.mobile-menu {
+        display: block;
+        float: none;
+        width: 44px;
+    }
+    nav ul.main-menu li:not(.mobile-menu) {
+        float: none;
+        display: none;
+        background-color: #4caf50;
+    }
+    nav ul.main-menu li::before {
+        display: none;
+    }
+    nav li.current, nav ul.main-menu li:hover {
+        position: relative;
+        background-color: #57cc5b !important;
+    }
+    nav li.current.mobile-menu {
+        background-color: #4caf50 !important;
+    }
 }
 
 .alert {
@@ -159,9 +199,7 @@ nav ul li.lang:before {
     margin-bottom: 30px;
 }
 .input-field input, .input-field textarea {
-    font-size: 16px;
-    line-height: 16px;
-    padding: 10px 0;
+    padding: 10px 5px;
     display: block;
     width: 100%;
     border: none;
@@ -195,8 +233,9 @@ nav ul li.lang:before {
     right: 50%;
 }
 .input-field label {
-    top: .6em;
-    color: #333;
+    top: 10px;
+    left: 20px;
+    color: #747474;
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
@@ -372,6 +411,7 @@ figure.effect p {
 }
 p {
     margin: 0 0 10px;
+    text-align: justify;
 }
 
 figure p > strong {
@@ -517,6 +557,15 @@ figure {
     line-height: 1.1;
     margin-bottom: 0;
 }
+@media (max-width: 991px) {
+    .profile-photo {
+        margin: 0 auto 40px auto !important;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+    }
+}
+
 .profile-list {
     margin: 0;
     padding: 0;
@@ -637,10 +686,13 @@ figure {
 #interests h3 {
     margin-top: .3em;
 }
-#interests img {
-    max-width: 235px;
-    max-height: 235px;
-    border-radius: 2em;
+#interests .interests-image {
+    max-width: 310px;
+    max-height: 210px;
+    overflow: hidden;
+}
+#interests .interests-image  img {
+    width: 100%;
 }
 
 /**
@@ -674,9 +726,11 @@ figure {
 }
 .row .right {
     float: right;
+    padding-left: 25px;
 }
 .row .left {
     float: left;
+    padding-right: 25px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
