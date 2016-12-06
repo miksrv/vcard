@@ -7,10 +7,10 @@
                         <nav>
                             <ul class="main-menu">
                                 <li class="mobile-menu"><a href="javascript:void(0)"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-                                <li><a href="/#profile"><?= $language->menu->about; ?></a></li>
-                                <li><a href="/#skills"><?= $language->menu->skills; ?></a></li>
-                                <li><a href="/#interests"><?= $language->menu->interests; ?></a></li>
-                                <li><a href="/#contacts"><?= $language->menu->contacts; ?></a></li>
+                                <li><a href="/#profile" title="<?= $language->menu->about; ?>"><?= $language->menu->about; ?></a></li>
+                                <li><a href="/#skills" title="<?= $language->menu->skills; ?>"><?= $language->menu->skills; ?></a></li>
+                                <li><a href="/#interests" title="<?= $language->menu->interests; ?>"><?= $language->menu->interests; ?></a></li>
+                                <li><a href="/#contacts" title="<?= $language->menu->contacts; ?>"><?= $language->menu->contacts; ?></a></li>
                                 <li<?= ($url == 'portfolio' ? ' class="current"' : NULL); ?>><a href="/portfolio"><?= $language->menu->portfolio; ?></a></li>
                             </ul>
                             <ul class="language-menu">
