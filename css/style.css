@@ -197,6 +197,7 @@ nav .mobile-menu a {
     margin-bottom: 30px;
 }
 .input-field input, .input-field textarea {
+    font: inherit;
     padding: 10px 5px;
     display: block;
     width: 100%;
@@ -495,9 +496,11 @@ figure {
     background-color: #FFF;
     display: none;
 }
-
 #works {
     margin-top: 3em;
+}
+#works p {
+    text-align: left;
 }
 
 #profile {
