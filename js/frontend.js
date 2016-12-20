@@ -229,6 +229,8 @@
 })( jQuery, window , document );
 $(function(e) {
     $('nav li.mobile-menu a, nav ul.main-menu li a').click(function () {
-        $("nav ul.main-menu li:not(.mobile-menu)").toggle();
+        if ($('nav li.mobile-menu').is(":visible")) {
+            $("nav ul.main-menu li:not(.mobile-menu)").toggle();
+        }
     });
 });
